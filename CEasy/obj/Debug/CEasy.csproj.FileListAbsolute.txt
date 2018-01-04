@@ -1,0 +1,10 @@
+D:\Source\Repo\PixelClicker\CEasy\bin\Debug\EasyHttp.dll.config
+D:\Source\Repo\PixelClicker\CEasy\bin\Debug\EasyHttp.dll
+D:\Source\Repo\PixelClicker\CEasy\bin\Debug\EasyHttp.pdb
+D:\Source\Repo\PixelClicker\CEasy\bin\Debug\Newtonsoft.Json.dll
+D:\Source\Repo\PixelClicker\CEasy\bin\Debug\Newtonsoft.Json.xml
+D:\Source\Repo\PixelClicker\CEasy\obj\Debug\CEasy.Properties.Resources.resources
+D:\Source\Repo\PixelClicker\CEasy\obj\Debug\CEasy.csproj.GenerateResource.Cache
+D:\Source\Repo\PixelClicker\CEasy\obj\Debug\EasyHttp.dll
+D:\Source\Repo\PixelClicker\CEasy\obj\Debug\EasyHttp.pdb
+D:\Source\Repo\PixelClicker\CEasy\obj\Debug\CEasy.csprojResolveAssemblyReference.cache

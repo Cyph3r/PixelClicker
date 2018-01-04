@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D1FC0D0A-EE54-4B6A-B181-57D1C6080852}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PixelClickerGUI.My.MyApplication</StartupObject>
+    <RootNamespace>PixelClickerGUI</RootNamespace>
+    <AssemblyName>PixelClickerGUI</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PixelClickerGUI.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PixelClickerGUI.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Images\program_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>FAC092BA259F73A9F17C287B9F39372C132D3A72</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PixelClicker_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ColorPickerLib">
+      <HintPath>packages\ColorPickerLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4, processorArchitecture=MSIL">
+      <HintPath>packages\ObjectListView.Official.2.9.1\lib\net20\ObjectListView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PixelClicker, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PixelClicker\bin\Release\PixelClicker.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Controller\Encryption.vb" />
+    <Compile Include="Controller\License.vb" />
+    <Compile Include="Controller\PredictionEngine.vb" />
+    <Compile Include="Controller\WindowsApi.vb" />
+    <Compile Include="Controller\ProgramStateHandler.vb" />
+    <Compile Include="Model\EventLog.vb" />
+    <Compile Include="Model\Global.vb" />
+    <Compile Include="Model\Profile.vb" />
+    <Compile Include="Model\Translations.vb" />
+    <Compile Include="NEW VIEW\ContactUsControly.Designer.vb">
+      <DependentUpon>ContactUsControly.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NEW VIEW\ContactUsControly.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NEW VIEW\EventControl.Designer.vb">
+      <DependentUpon>EventControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NEW VIEW\EventControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NEW VIEW\DebugControl.Designer.vb">
+      <DependentUpon>DebugControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NEW VIEW\DebugControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NEW VIEW\CommunityControl.Designer.vb">
+      <DependentUpon>CommunityControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NEW VIEW\CommunityControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NEW VIEW\Poller.Designer.vb">
+      <DependentUpon>Poller.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NEW VIEW\Poller.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NEW VIEW\SaveAsProfile.Designer.vb">
+      <DependentUpon>SaveAsProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NEW VIEW\SaveAsProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NEW VIEW\TaskEditControl.Designer.vb">
+      <DependentUpon>TaskEditControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NEW VIEW\TaskEditControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NEW VIEW\SettingsControl.Designer.vb">
+      <DependentUpon>SettingsControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NEW VIEW\SettingsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NEW VIEW\TaskListControl.Designer.vb">
+      <DependentUpon>TaskListControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NEW VIEW\TaskListControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Types\Bot.vb" />
+    <Compile Include="Types\SearchMethod.vb" />
+    <Compile Include="Types\Task.vb" />
+    <Compile Include="Model\ActionModel.vb" />
+    <Compile Include="Model\LockBitmap.vb" />
+    <Compile Include="Model\TargetHistory.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="View\DrawForm.Designer.vb">
+      <DependentUpon>DrawForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\DrawForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PixelClickerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PixelClickerForm.Designer.vb">
+      <DependentUpon>PixelClickerForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Model\ColorModel.vb" />
+    <Compile Include="Controller\Actions\Mouse.vb" />
+    <Compile Include="Controller\PixelClicker.vb" />
+    <Compile Include="Controller\FirstPixelClicker.vb" />
+    <Compile Include="Controller\MiddlePixelClicker.vb" />
+    <Compile Include="Model\Task.vb" />
+    <Compile Include="Controller\RadarPixelClicker.vb" />
+    <Compile Include="Controller\Actions\CopyScreen.vb" />
+    <Compile Include="NEW VIEW\PixelClickerFormRedesign.Designer.vb">
+      <DependentUpon>PixelClickerFormRedesign.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NEW VIEW\PixelClickerFormRedesign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TaskWizardForm.Designer.vb">
+      <DependentUpon>TaskWizardForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\TaskWizardForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Types\Click.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NEW VIEW\ContactUsControly.resx">
+      <DependentUpon>ContactUsControly.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW VIEW\EventControl.resx">
+      <DependentUpon>EventControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW VIEW\DebugControl.resx">
+      <DependentUpon>DebugControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW VIEW\CommunityControl.resx">
+      <DependentUpon>CommunityControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW VIEW\Poller.resx">
+      <DependentUpon>Poller.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW VIEW\SaveAsProfile.resx">
+      <DependentUpon>SaveAsProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW VIEW\TaskEditControl.resx">
+      <DependentUpon>TaskEditControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW VIEW\SettingsControl.resx">
+      <DependentUpon>SettingsControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW VIEW\TaskListControl.resx">
+      <DependentUpon>TaskListControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DrawForm.resx">
+      <DependentUpon>DrawForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PixelClickerForm.resx">
+      <DependentUpon>PixelClickerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW VIEW\PixelClickerFormRedesign.resx">
+      <DependentUpon>PixelClickerFormRedesign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TaskWizardForm.resx">
+      <DependentUpon>TaskWizardForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\1465343662_Log Out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Libraries\ColorPickerLib.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FodyWeavers.xml" />
+    <Content Include="Resources\EasyUpdater.exe" />
+    <Content Include="Resources\Images\SaveProfile.png" />
+    <None Include="Resources\Images\program_icon.ico" />
+    <None Include="Resources\Images\EditTask.png" />
+    <None Include="Resources\Images\DeleteTask.png" />
+    <None Include="Resources\Images\StartTask.png" />
+    <None Include="Resources\Images\StopTask.png" />
+    <None Include="Resources\Images\AddTask.png" />
+    <None Include="Resources\Images\Donate.png" />
+    <None Include="Resources\Images\Discord.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CEasy\CEasy.csproj">
+      <Project>{eb6fde88-5071-4bba-bdd0-ce892144dacf}</Project>
+      <Name>CEasy</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="packages\Fody.1.28.3\build\Fody.targets" Condition="Exists('packages\Fody.1.28.3\build\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Fody.1.28.3\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Fody.1.28.3\build\Fody.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
