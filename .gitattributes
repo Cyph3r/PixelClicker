@@ -1,0 +1,2 @@
+*.cs linguist-language=C#
+*.vb linguist-language=C#
